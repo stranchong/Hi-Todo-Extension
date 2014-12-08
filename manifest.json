@@ -8,10 +8,19 @@
     "description": "百度Hi Todo浏览器扩展插件",
     "version": "0.1",
 
+    // 浏览器扩展按钮行为
     "browser_action": {
         "default_icon": "img/icon.png",
         "default_popup": "popup.html"
     },
+
+    // 页面注入脚本
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["js/content-scripts.js"]
+        }
+    ],
 
     // 权限
     "permissions": [
