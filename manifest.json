@@ -1,0 +1,20 @@
+/*
+* 插件声明文件
+* */
+{
+    "manifest_version": 2,  // 声明文件格式版本
+
+    "name": "百度Hi Todo",
+    "description": "百度Hi Todo浏览器扩展插件",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    // 权限
+    "permissions": [
+        "http://*.sinaimg.cn/*"
+    ]
+}
