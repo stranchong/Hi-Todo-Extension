@@ -8,9 +8,15 @@
     "description": "百度Hi Todo浏览器扩展插件",
     "version": "0.2",
 
+    // 图标
+    "icons": {
+        "16": "img/logo-16x16.png",
+        "48": "img/logo-48x48.png"
+    },
+
     // 浏览器扩展按钮行为
     "browser_action": {
-        "default_icon": "img/icon.png",
+        "default_icon": "img/logo-48x48.png",
         "default_popup": "popup.html"
     },
 
@@ -19,18 +25,22 @@
         {
             "matches": ["http://*/*"],
             "js": ["js/content-scripts.js"]
+        },
+        {
+            "matches": ["https://*/*"],
+            "js": ["js/content-scripts.js"]
         }
     ],
 
-    // 一直在后台运行的js
+    // 后台运行的js脚本
     "background": {
         "scripts": ["js/background.js"]
     },
 
     // 权限申请
     "permissions": [
-        "http://*.sinaimg.cn/*",
-        "background",
-        "contextMenus"
+        "http://*/*",   // 可以发起到所有域的HTTP请求
+        "background",   // 后台运行权限
+        "contextMenus"  // 右键菜单权限
     ]
 }
