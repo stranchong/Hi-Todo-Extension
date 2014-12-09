@@ -6,7 +6,7 @@
 
     "name": "百度Hi Todo",
     "description": "百度Hi Todo浏览器扩展插件",
-    "version": "0.1",
+    "version": "0.2",
 
     // 浏览器扩展按钮行为
     "browser_action": {
@@ -22,8 +22,15 @@
         }
     ],
 
-    // 权限
+    // 一直在后台运行的js
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+
+    // 权限申请
     "permissions": [
-        "http://*.sinaimg.cn/*"
+        "http://*.sinaimg.cn/*",
+        "background",
+        "contextMenus"
     ]
 }
