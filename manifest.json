@@ -24,11 +24,11 @@
     "content_scripts": [
         {
             "matches": ["http://*/*"],
-            "js": ["js/content-scripts.js"]
+            "js": ["js/jquery-2.1.1.min.js", "js/content-scripts.js"]
         },
         {
             "matches": ["https://*/*"],
-            "js": ["js/content-scripts.js"]
+            "js": ["js/jquery-2.1.1.min.js", "js/content-scripts.js"]
         }
     ],
 
