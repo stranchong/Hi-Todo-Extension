@@ -6,7 +6,7 @@
 
     "name": "百度Hi Todo",
     "description": "百度Hi Todo浏览器扩展插件",
-    "version": "0.2",
+    "version": "0.3",
 
     // 图标
     "icons": {
@@ -23,11 +23,8 @@
     // 页面注入脚本
     "content_scripts": [
         {
-            "matches": ["http://*/*"],
-            "js": ["js/jquery-2.1.1.min.js", "js/content-scripts.js"]
-        },
-        {
-            "matches": ["https://*/*"],
+            "matches": ["http://*/*", "https://*/*"],
+            "css": ["css/style.css"],
             "js": ["js/jquery-2.1.1.min.js", "js/content-scripts.js"]
         }
     ],
