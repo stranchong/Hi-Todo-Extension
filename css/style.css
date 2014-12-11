@@ -1,11 +1,34 @@
-#main{
+#hi-todo-popup-main{
     padding: 10px;
 }
-#script_qrc{
-    width: 200px;
-    height: 200px;
+#script-qrc-div{
+    width: 224px;
+    height: 224px;
     position: fixed;
     top: 40px;
     left: 0;
     z-index: 999;
+    border: 0;
+}
+#script-qrc-img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 24px 0 0 0;
+    padding: 0;
+}
+#script-qrc-xicon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: right;
+    position: relative;
+    top: 12px;
+    left: -12px;
+}
+#script-qrc-xicon img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }

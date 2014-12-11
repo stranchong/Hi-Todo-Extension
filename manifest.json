@@ -25,6 +25,7 @@
         {
             "matches": ["http://*/*", "https://*/*"],
             "css": ["css/style.css"],
+            "run_at":"document_end",
             "js": ["js/jquery-2.1.1.min.js", "js/content-scripts.js"]
         }
     ],
@@ -38,6 +39,11 @@
     "permissions": [
         "http://*/*",   // 可以发起到所有域的HTTP请求
         "background",   // 后台运行权限
-        "contextMenus"  // 右键菜单权限
+        "contextMenus",  // 右键菜单权限
+        "tabs"
+    ],
+
+    "web_accessible_resources": [
+        "img/*"
     ]
 }
