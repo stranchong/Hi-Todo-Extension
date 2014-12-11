@@ -5,7 +5,7 @@
     "manifest_version": 2,  // 声明文件格式版本
 
     "name": "百度Hi Todo",
-    "description": "百度Hi Todo浏览器扩展插件",
+    "description": "百度Hi Todo浏览器扩展",
     "version": "0.3",
 
     // 图标

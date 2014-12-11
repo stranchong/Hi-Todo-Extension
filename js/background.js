@@ -13,7 +13,7 @@ function share_to_hi(info, tab){
     var pageUrl = encodeURIComponent(tab.url);
     var title = encodeURI(tab.title);
     var imgUrl;
-    var description;
+    var description = '';
     var apiUrl;
     // 异步回调请求数据
     chrome.tabs.sendMessage(tab.id, "getPageImg", function(response) {
