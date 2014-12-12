@@ -6,7 +6,8 @@
 
     "name": "百度Hi Todo",
     "description": "百度Hi Todo浏览器扩展",
-    "version": "0.3",
+    "version": "0.4",
+    "homepage_url": "http://im.baidu.com/",
 
     // 图标
     "icons": {

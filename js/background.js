@@ -6,8 +6,12 @@ function create_todo(){
 
 }
 // 创建Todo（有选择文本）
-function create_todo_select(){
+function create_todo_select(info, tab){
     var text = encodeURIComponent(info.selectionText);
+    chrome.tabs.sendMessage(tab.id, {method: "todo_with_content", content: text}, function(response) {
+        var text = response;
+
+    });
 }
 function share_to_hi(info, tab){
     var pageUrl = encodeURIComponent(tab.url);

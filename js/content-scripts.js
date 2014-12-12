@@ -41,6 +41,9 @@ chrome.extension.onMessage.addListener(function(message, sender, sendResponse) {
         }
         sendResponse(description);
     }
+    else if(message.method == 'todo_with_content'){
+        sendResponse("创建好了Todo");
+    }
 });
 
 $(document).on("click", "#script-qrc-xicon", function(){
